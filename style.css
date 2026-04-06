@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
@@ -324,9 +328,28 @@ a {
   background: var(--bg-card);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  padding: 26px;
   box-shadow: var(--shadow);
   backdrop-filter: blur(8px);
+}
+
+.solution-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.solution-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.solution-image-wide {
+  height: 320px;
+}
+
+.solution-content {
+  padding: 24px 26px 28px;
 }
 
 .card h3 {
@@ -350,6 +373,10 @@ a {
   gap: 22px;
 }
 
+.service-list {
+  padding: 26px;
+}
+
 .service-list ul {
   margin: 16px 0 0;
   padding-left: 18px;
@@ -364,6 +391,12 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
+}
+
+.benefit-item,
+.process-step,
+.contact-card {
+  padding: 26px;
 }
 
 .process-grid {
@@ -545,5 +578,10 @@ a {
 
   .hero-buttons {
     flex-direction: column;
+  }
+
+  .solution-image,
+  .solution-image-wide {
+    height: 220px;
   }
 }
