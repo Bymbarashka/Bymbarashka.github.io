@@ -45,19 +45,14 @@
       <div class="hero-bg-glow hero-bg-glow-1"></div>
       <div class="hero-bg-glow hero-bg-glow-2"></div>
 
-      <div class="container hero-container">
+      <div class="container hero-container hero-container-split">
         <div class="hero-content">
-          <div class="hero-logo-wrap">
-            <img
-              src="images/logo.png"
-              alt="Логотип Геоинформационные системы"
-              class="logo-img logo-img-hero"
-            />
-          </div>
-
           <span class="hero-kicker">ООО «Геоинформационные системы»</span>
 
-          <h1>Инфраструктура бизнеса: безопасность, связь, автоматизация</h1>
+          <div class="hero-title-block">
+            <div class="hero-company-name">Геоинформационные системы</div>
+            <h1>Инфраструктура бизнеса: безопасность, связь, автоматизация</h1>
+          </div>
 
           <p class="hero-description">
             Проектируем, внедряем и объединяем в единый управляемый контур системы
@@ -75,6 +70,16 @@
             <span>Корпоративная связь</span>
             <span>CRM и автоматизация</span>
             <span>Защита критичных ИТ-зон</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-logo-card">
+            <img
+              src="images/logo.png"
+              alt="Логотип Геоинформационные системы"
+              class="hero-main-logo"
+            />
           </div>
         </div>
       </div>
@@ -395,21 +400,40 @@
 
     <section class="section section-contacts" id="contacts">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading section-heading-contacts">
           <span class="section-label">Контакты</span>
           <h2>Свяжитесь с нами</h2>
+          <p>Расскажите о задаче — подберём решение под объект, инфраструктуру и процессы бизнеса.</p>
         </div>
 
-        <div class="contacts-grid">
-          <div class="contact-card card">
+        <div class="contacts-grid contacts-grid-improved">
+          <div class="contact-card card contact-card-info">
             <h3>ООО «Геоинформационные системы»</h3>
-            <p><strong>Адрес:</strong><br />450091, Республика Башкортостан, г. Уфа, Сафроновский проезд, д. 4, офис 3</p>
-            <p><strong>Телефон:</strong><br /><a href="tel:+79174092934">+7 917 409-29-34</a></p>
-            <p><strong>WhatsApp:</strong><br /><a href="https://wa.me/79174092934" target="_blank" rel="noopener noreferrer">+7 917 409-29-34</a></p>
-            <p><strong>E-mail:</strong><br /><a href="mailto:gdd@icsis.ru">gdd@icsis.ru</a></p>
+
+            <div class="contact-list">
+              <div class="contact-row">
+                <span class="contact-label">Адрес</span>
+                <p>450091, Республика Башкортостан, г. Уфа, Сафроновский проезд, д. 4, офис 3</p>
+              </div>
+
+              <div class="contact-row">
+                <span class="contact-label">Телефон</span>
+                <p><a href="tel:+79174092934">+7 917 409-29-34</a></p>
+              </div>
+
+              <div class="contact-row">
+                <span class="contact-label">WhatsApp</span>
+                <p><a href="https://wa.me/79174092934" target="_blank" rel="noopener noreferrer">+7 917 409-29-34</a></p>
+              </div>
+
+              <div class="contact-row">
+                <span class="contact-label">E-mail</span>
+                <p><a href="mailto:gdd@icsis.ru">gdd@icsis.ru</a></p>
+              </div>
+            </div>
           </div>
 
-          <div class="contact-card card">
+          <div class="contact-card card contact-card-form">
             <h3>Оставить заявку</h3>
             <form class="contact-form">
               <label>
@@ -437,17 +461,34 @@
 
   <footer class="site-footer">
     <div class="container footer-container">
-      <div class="footer-brand">
-        <strong>ООО «Геоинформационные системы»</strong>
-        <span>Инфраструктура бизнеса: безопасность, связь, автоматизация</span>
+      <div class="footer-top">
+        <div class="footer-brand-block">
+          <img src="images/logo.png" alt="Логотип Геоинформационные системы" class="footer-logo" />
+          <div class="footer-brand-text">
+            <strong>Геоинформационные системы</strong>
+            <span>Инфраструктура бизнеса: безопасность, связь, автоматизация</span>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#hero">Главная</a>
+          <a href="#solutions">Решения</a>
+          <a href="#services">Услуги</a>
+          <a href="#about">О компании</a>
+          <a href="#contacts">Контакты</a>
+        </div>
+
+        <div class="footer-contacts">
+          <a href="tel:+79174092934">+7 917 409-29-34</a>
+          <a href="mailto:gdd@icsis.ru">gdd@icsis.ru</a>
+          <a href="https://wa.me/79174092934" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
       </div>
 
-      <div class="footer-contacts">
-        <a href="tel:+79174092934">+7 917 409-29-34</a>
-        <a href="mailto:gdd@icsis.ru">gdd@icsis.ru</a>
+      <div class="footer-bottom">
+        <span>© ООО «Геоинформационные системы»</span>
       </div>
     </div>
   </footer>
 </body>
 </html>
-<!-- rebuild -->
