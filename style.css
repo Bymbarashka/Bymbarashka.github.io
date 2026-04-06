@@ -297,36 +297,23 @@ img {
   position: relative;
   z-index: 2;
   min-height: calc(100vh - 84px);
-  padding: 78px 0 118px;
+  padding: 86px 0 118px;
 }
 
 .hero-container-split {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
-  gap: 42px;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.95fr);
+  gap: 48px;
   align-items: center;
 }
 
 .hero-content {
-  max-width: 780px;
-  padding-top: 6px;
+  max-width: 760px;
+  align-self: center;
 }
 
 .hero-title-block {
-  margin-bottom: 20px;
-}
-
-.hero-company-name {
-  margin-bottom: 18px;
-  font-size: clamp(34px, 4.2vw, 58px);
-  font-weight: 900;
-  line-height: 0.98;
-  letter-spacing: -0.04em;
-  color: #eef9ff;
-  text-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.12),
-    0 12px 32px rgba(35, 184, 255, 0.18),
-    0 0 34px rgba(69, 224, 255, 0.1);
+  margin-bottom: 22px;
 }
 
 .hero h1 {
@@ -338,7 +325,7 @@ img {
 }
 
 .hero-description {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 0 30px;
   font-size: clamp(18px, 2vw, 22px);
   color: var(--text-soft);
@@ -383,24 +370,27 @@ img {
   min-height: 100%;
 }
 
-.hero-logo-card {
-  position: relative;
-  width: min(100%, 460px);
-  aspect-ratio: 1 / 1;
+.hero-visual-frame {
+  width: 100%;
+  min-height: 620px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateY(24px);
+}
+
+.hero-logo-card {
+  position: relative;
+  width: min(100%, 700px);
+  height: min(62vh, 540px);
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 34px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
-    radial-gradient(circle at 50% 35%, rgba(69, 224, 255, 0.14), transparent 55%);
-  border: 1px solid rgba(123, 187, 255, 0.14);
-  box-shadow:
-    0 30px 60px rgba(0, 0, 0, 0.3),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+    radial-gradient(circle at 50% 50%, rgba(69, 224, 255, 0.12), transparent 58%);
+  border: 1px solid rgba(123, 187, 255, 0.1);
   overflow: hidden;
 }
 
@@ -409,19 +399,19 @@ img {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(123, 187, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(123, 187, 255, 0.05) 1px, transparent 1px);
-  background-size: 56px 56px;
+    linear-gradient(rgba(123, 187, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 187, 255, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
   pointer-events: none;
 }
 
 .hero-main-logo {
   position: relative;
   z-index: 1;
-  width: min(70%, 330px);
+  width: min(54%, 320px);
   filter:
-    drop-shadow(0 0 20px rgba(69, 224, 255, 0.22))
-    drop-shadow(0 0 42px rgba(35, 184, 255, 0.14));
+    drop-shadow(0 0 22px rgba(69, 224, 255, 0.22))
+    drop-shadow(0 0 44px rgba(35, 184, 255, 0.14));
 }
 
 .section {
@@ -848,13 +838,14 @@ img {
     gap: 34px;
   }
 
-  .hero-visual {
-    order: -1;
+  .hero-visual-frame {
+    min-height: 420px;
   }
 
   .hero-logo-card {
-    max-width: 360px;
-    transform: none;
+    width: min(100%, 520px);
+    height: 380px;
+    min-height: 380px;
   }
 
   .footer-top {
@@ -947,10 +938,6 @@ img {
     width: 48px;
   }
 
-  .hero-company-name {
-    font-size: 30px;
-  }
-
   .hero h1 {
     font-size: 46px;
   }
@@ -980,7 +967,13 @@ img {
   }
 
   .hero-logo-card {
+    height: 320px;
+    min-height: 320px;
     border-radius: 24px;
+  }
+
+  .hero-main-logo {
+    width: min(62%, 240px);
   }
 
   .contact-card-info h3,
