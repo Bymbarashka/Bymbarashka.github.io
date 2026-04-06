@@ -334,22 +334,25 @@ img {
 
 .solution-card {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   padding: 0;
 }
 
 .solution-image {
   width: 100%;
-  height: 240px;
+  height: 180px;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
 .solution-image-wide {
-  height: 320px;
+  height: 240px;
 }
 
 .solution-content {
-  padding: 24px 26px 28px;
+  padding: 20px 22px 24px;
 }
 
 .card h3 {
@@ -581,6 +584,10 @@ img {
   }
 
   .solution-image,
+  .solution-image-wide {
+    height: 180px;
+  }
+
   .solution-image-wide {
     height: 220px;
   }
