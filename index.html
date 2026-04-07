@@ -72,13 +72,65 @@
 
         <div class="hero-visual">
           <div class="hero-visual-frame">
-            <div class="hero-logo-card">
-              <img
-                src="images/logo.png"
-                alt="Логотип Геоинформационные системы"
-                class="hero-main-logo"
-              />
-            </div>
+          <div class="hero-logo-card">
+  <img
+    src="images/logo.png"
+    alt="Логотип Геоинформационные системы"
+    class="hero-main-logo"
+  />
+
+  <svg class="logo-light-overlay" viewBox="0 0 1000 1000" aria-hidden="true">
+    <defs>
+      <filter id="logoGlow" x="-200%" y="-200%" width="400%" height="400%">
+        <feGaussianBlur stdDeviation="8" result="blur"></feGaussianBlur>
+        <feMerge>
+          <feMergeNode in="blur"></feMergeNode>
+          <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+      </filter>
+
+      <path
+        id="outerTrianglePath"
+        d="M 500 120 L 760 690 L 240 690 Z"
+        fill="none"
+      ></path>
+    </defs>
+
+    <circle class="logo-light-glow" r="16" filter="url(#logoGlow)">
+      <animateMotion
+        dur="7s"
+        repeatCount="indefinite"
+        rotate="auto"
+      >
+        <mpath href="#outerTrianglePath"></mpath>
+      </animateMotion>
+
+      <animate
+        attributeName="fill"
+        values="#ffffff; #23b8ff; #0a1630; #ffffff"
+        dur="7s"
+        repeatCount="indefinite"
+      ></animate>
+    </circle>
+
+    <circle class="logo-light-core" r="7">
+      <animateMotion
+        dur="7s"
+        repeatCount="indefinite"
+        rotate="auto"
+      >
+        <mpath href="#outerTrianglePath"></mpath>
+      </animateMotion>
+
+      <animate
+        attributeName="fill"
+        values="#ffffff; #45e0ff; #11284f; #ffffff"
+        dur="7s"
+        repeatCount="indefinite"
+      ></animate>
+    </circle>
+  </svg>
+</div>
           </div>
         </div>
       </div>
