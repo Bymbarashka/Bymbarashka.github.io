@@ -1002,6 +1002,68 @@ img {
     transition: none !important;
   }
 }
+/* ===== HERO LOGO: СДВИГ ВПРАВО И УВЕЛИЧЕНИЕ ===== */
+
+.hero-container-split {
+  grid-template-columns: minmax(0, 0.9fr) minmax(560px, 1.1fr);
+  gap: 24px;
+}
+
+.hero-visual {
+  justify-content: flex-end;
+}
+
+.hero-visual-frame {
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.hero-logo-card {
+  width: min(100%, 860px);
+  height: min(78vh, 760px);
+  min-height: 560px;
+  transform: translateX(70px);
+}
+
+.hero-main-logo {
+  width: min(82%, 500px);
+}
+
+@media (max-width: 1180px) {
+  .hero-container-split {
+    grid-template-columns: minmax(0, 1fr) minmax(460px, 1fr);
+    gap: 24px;
+  }
+
+  .hero-logo-card {
+    width: min(100%, 700px);
+    height: min(68vh, 600px);
+    min-height: 460px;
+    transform: translateX(30px);
+  }
+
+  .hero-main-logo {
+    width: min(78%, 420px);
+  }
+}
+
+@media (max-width: 980px) {
+  .hero-visual,
+  .hero-visual-frame {
+    justify-content: center;
+  }
+
+  .hero-logo-card {
+    width: min(100%, 520px);
+    height: 380px;
+    min-height: 380px;
+    transform: none;
+  }
+
+  .hero-main-logo {
+    width: min(62%, 260px);
+  }
+}
 /* ===== SERVICE PAGE: AUDIT ===== */
 
 /* ===== SERVICE PAGE: AUDIT ===== */
