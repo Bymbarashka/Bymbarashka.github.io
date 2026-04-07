@@ -1022,7 +1022,7 @@ img {
   width: min(100%, 860px);
   height: min(78vh, 760px);
   min-height: 560px;
-  transform: translateX(115px);
+  transform: translateX(125px);
 }
 
 .hero-main-logo {
