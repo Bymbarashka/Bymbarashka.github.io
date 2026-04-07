@@ -391,7 +391,7 @@ img {
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
     radial-gradient(circle at 50% 50%, rgba(69, 224, 255, 0.12), transparent 58%);
   border: 1px solid rgba(123, 187, 255, 0.1);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-logo-card::before {
@@ -413,7 +413,33 @@ img {
     drop-shadow(0 0 22px rgba(69, 224, 255, 0.22))
     drop-shadow(0 0 44px rgba(35, 184, 255, 0.14));
 }
+.logo-light-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+  overflow: visible;
+}
 
+.logo-light-glow {
+  opacity: 0.95;
+}
+
+.logo-light-core {
+  opacity: 1;
+}
+
+@media (max-width: 980px) {
+  .logo-light-glow {
+    r: 12;
+  }
+
+  .logo-light-core {
+    r: 5;
+  }
+}
 .section {
   position: relative;
   padding: 100px 0;
