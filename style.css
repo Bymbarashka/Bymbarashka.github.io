@@ -1193,3 +1193,11 @@ img {
     min-height: 220px;
   }
 }
+.solution-link-card {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.solution-link-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(57, 215, 255, 0.32);
+}
